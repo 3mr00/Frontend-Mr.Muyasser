@@ -4,6 +4,7 @@ body * {
 }
 body {
   background-color: #fff !important;
+  overflow-x: hidden;
 }
 /* ---------------------------------------------------
     signin
@@ -21,11 +22,11 @@ body {
 .signin_logo {
   width: 226px;
   height: 226px;
-  margin: 0 auto;
 }
 .div_form_signin {
   width: 465px;
   height: 499px;
+  align-items: center;
 }
 .text_signin {
   color: #36c;
@@ -139,6 +140,9 @@ mark.blue {
   }
   .input_signin {
     width: 100%;
+  }
+  .text_p_signin {
+    font-size: 15px;
   }
 }
 /* ---------------------------------------------------
