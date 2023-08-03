@@ -584,6 +584,13 @@ a.article:hover {
   line-height: 32px; /* 152.381% */
   letter-spacing: -0.399px;
 }
+
+.mychapter_text_link::before {
+  content: ">";
+  width: 25px;
+  margin: 10px;
+  color: #e79516;
+}
 .title_name_card {
   color: #000;
   font-size: 17px !important;
@@ -607,5 +614,243 @@ a.article:hover {
   margin-top: -20px;
 }
 
-.footer_content {
+.mylessons {
+  margin-top: 5px;
+  margin-left: 8px;
+  height: 21px;
+}
+.items_chapter {
+  height: 80px;
+  width: 100%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  align-items: end;
+  margin-bottom: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.items_chapter div h5 {
+  font-weight: 600 !important;
+  margin-left: 23px;
+  cursor: pointer;
+}
+.items_chapter div {
+  width: 46%;
+  display: -webkit-box;
+}
+
+.items_chapter div h5.active {
+  color: #36c;
+  font-weight: bold !important;
+}
+.Chapter_name {
+  color: #000 !important;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.price_chapter {
+  border-radius: 6px;
+  background: #d9ffe4;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+  width: 75px;
+  height: 30px;
+  margin-left: auto;
+  margin-top: -30px;
+}
+.price_chapter p {
+  color: #008426;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+}
+.price_chapter_locked {
+  background: #ffd7d8;
+}
+.price_chapter_locked p {
+  color: #ce0c14;
+}
+
+.rightside_chapter {
+  display: inline-grid;
+  margin-top: 8px;
+  width: 155px;
+}
+.Lesson_Content {
+  color: #000;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+}
+.content_chapter {
+  width: 70px;
+  height: 30px;
+  border-radius: 6px;
+  background: #d6e0f5;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.Tests {
+  background: #ffd0c2;
+  width: 81px;
+  color: #f75426;
+}
+.Tests p {
+  color: #f75426;
+}
+.Documents {
+  background: #d9ffe4;
+  width: 110px;
+}
+.Documents p {
+  color: #24a353;
+}
+.text_chapter {
+  color: #36c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.btn_chapter_card:nth-child(1) {
+  width: 50%;
+}
+.btn_chapter_card:nth-child(2) {
+  width: 49%;
+}
+.modal-title {
+  font-weight: 900 !important;
+  font-size: 20px !important;
+}
+.check {
+  color: #36c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline !important;
+  cursor: pointer;
+}
+.content_modal_chapter {
+  border-radius: 8px;
+  background: #e6e8f4;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.Lesson_Content_modal {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text_elc {
+  color: #f90;
+  font-size: 28px;
+  font-weight: 700 !important;
+  padding-top: 15px;
+}
+@media (max-width: 450px) {
+  .items_chapter {
+    align-items: center;
+  }
+  .items_chapter div h5 {
+    margin-left: 13px;
+  }
+
+  .btn_chapter_card:nth-child(2) {
+    width: 47%;
+  }
+  .text_elc {
+    color: #f90;
+    font-size: 22px;
+  }
+  .mychapter_text {
+    color: #36c;
+    font-size: 13px;
+  }
+}
+/* /////////////////////////////////////////////////////
+   Lesson
+/////////////////////////////////////////////////////// */
+.video_text {
+  color: #041b8d;
+  font-size: 21px;
+  font-weight: 700 !important;
+}
+/* END Optional styles */
+.video-container {
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.video-container .video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  filter: brightness(0.5);
+}
+
+.play-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.play-button-wrapper .circle-play-b {
+  cursor: pointer;
+  pointer-events: auto;
+}
+.play-button-wrapper .circle-play-b svg {
+  width: 80px;
+  height: 80px;
+}
+
+.text_card_video {
+  color: #000;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.content_card {
+  color: #e79516;
+  font-weight: 700 !important;
+}
+.content_name {
+  color: #36c;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+.w_neme_doc {
+  width: 70%;
+}
+@media (max-width: 450px) {
+  .text_card_video {
+    font-size: 12px !important;
+  }
+  .play-button-wrapper .circle-play-b svg {
+    width: 50px;
+    height: 50px;
+  }
 }
