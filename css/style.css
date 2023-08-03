@@ -581,12 +581,11 @@ a.article:hover {
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 152.381% */
+  font-size: 19px;
   letter-spacing: -0.399px;
 }
 
-.mychapter_text_link::before {
-  content: ">";
+.mychapter_text_link {
   width: 25px;
   margin: 10px;
   color: #e79516;
@@ -627,36 +626,41 @@ a.article:hover {
   box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
-  align-items: end;
+  justify-content: center;
+
   margin-bottom: 30px;
   overflow-x: scroll;
   overflow-y: hidden;
+  padding-top: 12px;
 }
 
-.items_chapter div h5 {
+.items_chapter div div {
   font-weight: 600 !important;
-  margin-left: 23px;
   cursor: pointer;
+  width: 100px;
+  margin-left: 5px;
 }
 .items_chapter div {
-  width: 46%;
-  display: -webkit-box;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
-.items_chapter div h5.active {
+.items_chapter div div.active {
   color: #36c;
   font-weight: bold !important;
 }
+.divs_inline:nth-child(1) {
+  margin-left: 5px;
+}
 .Chapter_name {
   color: #000 !important;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 500 !important;
 }
 .price_chapter {
   border-radius: 6px;
-  background: #d9ffe4;
+  background: #d9ffe4 !important;
   box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
   width: 75px;
   height: 30px;
@@ -664,17 +668,14 @@ a.article:hover {
   margin-top: -30px;
 }
 .price_chapter p {
-  color: #008426;
-  font-size: 16px;
-  font-style: normal;
+  color: #008426 !important;
   font-weight: 700 !important;
-  line-height: normal;
 }
 .price_chapter_locked {
-  background: #ffd7d8;
+  background: #ffd7d8 !important;
 }
 .price_chapter_locked p {
-  color: #ce0c14;
+  color: #ce0c14 !important;
 }
 
 .rightside_chapter {
@@ -701,24 +702,20 @@ a.article:hover {
   color: #f75426;
 }
 .Tests p {
-  color: #f75426;
+  color: #f75426 !important;
 }
 .Documents {
   background: #d9ffe4;
   width: 110px;
 }
 .Documents p {
-  color: #24a353;
+  color: #24a353 !important;
 }
 .text_chapter {
-  color: #36c;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  color: #36c !important;
 }
 .btn_chapter_card:nth-child(1) {
-  width: 50%;
+  width: 49%;
 }
 .btn_chapter_card:nth-child(2) {
   width: 49%;
@@ -728,34 +725,32 @@ a.article:hover {
   font-size: 20px !important;
 }
 .check {
-  color: #36c;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: normal;
+  color: #36c !important;
   text-decoration-line: underline !important;
-  cursor: pointer;
 }
 .content_modal_chapter {
   border-radius: 8px;
-  background: #e6e8f4;
+  background: #e6e8f4 !important;
   box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .Lesson_Content_modal {
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
+  color: #000 !important;
+  font-weight: 700 !important;
 }
 
 .text_elc {
-  color: #f90;
-  font-size: 28px;
+  color: #f90 !important;
+  font-size: 28px !important;
   font-weight: 700 !important;
   padding-top: 15px;
 }
-@media (max-width: 450px) {
+@media (max-width: 1300px) {
   .items_chapter {
     align-items: center;
+    justify-content: inherit;
   }
+}
+@media (max-width: 450px) {
   .items_chapter div h5 {
     margin-left: 13px;
   }
@@ -764,12 +759,15 @@ a.article:hover {
     width: 47%;
   }
   .text_elc {
-    color: #f90;
-    font-size: 22px;
+    color: #f90 !important;
+    font-size: 22px !important;
   }
   .mychapter_text {
     color: #36c;
     font-size: 13px;
+  }
+  .items_chapter {
+    padding-top: 0px !important;
   }
 }
 /* /////////////////////////////////////////////////////

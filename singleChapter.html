@@ -681,20 +681,22 @@
 
           <div class="d-flex align-items-center">
             <p class="mychapter_text mt-3">My Chapters</p>
-            <p class="mychapter_text mychapter_text_link mt-3">My Lessons</p>
+            <p class="mychapter_text mt-3">
+              <span class="mychapter_text_link">></span>My Lessons
+            </p>
           </div>
           <div class="items_chapter">
             <div>
-              <h5 class="active">Chpter One</h5>
-              <h5>Chpter Two</h5>
-              <h5>Chpter Three</h5>
-              <h5>Chpter Four</h5>
-              <h5>Chpter Five</h5>
-              <h5>Chpter Six</h5>
-              <h5>Chpter Seven</h5>
-              <h5>Chpter Eight</h5>
-              <h5>Chpter Nine</h5>
-              <h5 class="mr-2">Chpter Ten</h5>
+              <div class="active">Chpter One</div>
+              <div>Chpter Two</div>
+              <div>Chpter Three</div>
+              <div>Chpter Four</div>
+              <div>Chpter Five</div>
+              <div>Chpter Six</div>
+              <div>Chpter Seven</div>
+              <div>Chpter Eight</div>
+              <div>Chpter Nine</div>
+              <div class="mr-2">Chpter Ten</div>
             </div>
           </div>
 
@@ -736,247 +738,6 @@
                     <button class="btn btn-info col-12 mt-4" type="button">
                       Start Lesson
                     </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xl-4 mb-4">
-              <div id="kanbanColumn2" class="list-group kanban-list">
-                <div class="card border-0 shadow p-4">
-                  <div
-                    class="card-header d-flex justify-content-between border-0 p-0 mb-3"
-                  >
-                    <div class="d-flex">
-                      <img src="images/Singlechapter.png" alt="" />
-                      <div class="rightside_chapter">
-                        <h3 class="h5 mb-0 title_name_card">Lesson One</h3>
-                        <p class="Chapter_name">Chapter: Magnetism</p>
-                      </div>
-                    </div>
-                    <div class="text-end">
-                      <img src="images/lock_red.png" />
-                    </div>
-                  </div>
-                  <div class="price_chapter price_chapter_locked text-center">
-                    <p>100 EGP</p>
-                  </div>
-
-                  <div class="card-body p-0">
-                    <div class="d-flex">
-                      <p class="Lesson_Content">Lesson Content:</p>
-                      <div class="ms-auto">
-                        <p
-                          class="check"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modal-CheckContent"
-                        >
-                          Check Content
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="d-flex gap-3">
-                      <div class="content_chapter text-center">
-                        <p class="text_chapter">video</p>
-                      </div>
-                      <div class="content_chapter text-center Tests">
-                        <p class="text_chapter">2 Tests</p>
-                      </div>
-                      <div class="content_chapter text-center Documents">
-                        <p class="text_chapter">Documents</p>
-                      </div>
-                    </div>
-                    <div class="text-center btn_chapter_div">
-                      <button
-                        class="btn btn-info col-lg-5 col-md-12 mt-4 btn_chapter_card"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modal-buycode"
-                      >
-                        Buy by Code
-                      </button>
-                      <button
-                        class="btn btn-outline-info mt-4 btn_chapter_card"
-                        type="button"
-                      >
-                        Buy by Wallet
-                      </button>
-                    </div>
-                    <!-- modal-buycode -->
-                    <div
-                      class="modal fade"
-                      id="modal-buycode"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="modal-buycode"
-                      aria-hidden="true"
-                    >
-                      <div
-                        class="modal-dialog modal-dialog-centered"
-                        role="document"
-                      >
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h2 class="h6 modal-title">Buy by Code</h2>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body mr-auto">
-                            <h6>
-                              Lorem ipsum dolor sit amet consectetur. Mus lacus
-                              euismod velit donec tristique aliquet enim netus
-                              nisl.
-                            </h6>
-                            <input
-                              type="email"
-                              class="input_signin"
-                              placeholder="Code"
-                              required
-                            />
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-info">
-                              Charge
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-link btn-gray-200 ms-auto"
-                              data-bs-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- modal-CheckContent -->
-                    <div
-                      class="modal fade"
-                      id="modal-CheckContent"
-                      tabindex="-1"
-                      role="dialog"
-                      aria-labelledby="modal-CheckContent"
-                      aria-hidden="true"
-                    >
-                      <div
-                        class="modal-dialog modal-dialog-centered"
-                        role="document"
-                      >
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h2 class="h6 Lesson_Content_modal">
-                              Lesson Content
-                            </h2>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body mr-auto">
-                            <h6>
-                              Lorem ipsum dolor sit amet consectetur. Mus lacus
-                              euismod velit donec tristique aliquet enim netus
-                              nisl.
-                            </h6>
-                            <div class="d-flex gap-3">
-                              <div class="content_chapter text-center">
-                                <p class="text_chapter">video</p>
-                              </div>
-                              <div class="content_chapter text-center Tests">
-                                <p class="text_chapter">2 Tests</p>
-                              </div>
-                              <div
-                                class="content_chapter text-center Documents"
-                              >
-                                <p class="text_chapter">Documents</p>
-                              </div>
-                            </div>
-                            <div class="mt-4">
-                              <div
-                                class="content_modal_chapter px-3 py-2 d-flex justify-content-between mt-3"
-                              >
-                                <div
-                                  class="d-flex w-100 align-items-center gap-2"
-                                >
-                                  <img
-                                    src="images/video_icon.png"
-                                    alt=""
-                                    style="width: 30px; height: 35px"
-                                  />
-                                  <h2 class="h6 w-100">
-                                    Newton First-low Part#01
-                                  </h2>
-                                </div>
-                                <p>Video</p>
-                              </div>
-                              <div
-                                class="ps-2 content_modal_chapter px-3 py-2 d-flex justify-content-between mt-3"
-                              >
-                                <div
-                                  class="d-flex w-100 align-items-center gap-2"
-                                >
-                                  <img
-                                    src="images/Quiz.png"
-                                    alt=""
-                                    style="width: 30px; height: 30px"
-                                  />
-                                  <h2 class="h6 w-100">Newton 1st low</h2>
-                                </div>
-                                <p>Quiz</p>
-                              </div>
-                              <div
-                                class="content_modal_chapter px-3 py-2 d-flex justify-content-between mt-3"
-                              >
-                                <div
-                                  class="d-flex w-100 align-items-center gap-2"
-                                >
-                                  <img
-                                    src="images/Doc.png"
-                                    alt=""
-                                    style="width: 30px; height: 35px"
-                                  />
-                                  <h2 class="h6 w-100">What is Physics</h2>
-                                </div>
-                                <p>Doc</p>
-                              </div>
-                              <div
-                                class="content_modal_chapter px-3 py-2 d-flex justify-content-between mt-3"
-                              >
-                                <div
-                                  class="d-flex w-100 align-items-center gap-2"
-                                >
-                                  <img
-                                    src="images/pdf.png"
-                                    alt=""
-                                    style="width: 30px; height: 35px"
-                                  />
-                                  <h2 class="h6 w-100">Newton 1st low</h2>
-                                </div>
-                                <p>Pdf</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-info">
-                              Charge
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-link btn-gray-200 ms-auto"
-                              data-bs-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
