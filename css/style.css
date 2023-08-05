@@ -727,6 +727,7 @@ a.article:hover {
 .check {
   color: #36c !important;
   text-decoration-line: underline !important;
+  cursor: pointer !important;
 }
 .content_modal_chapter {
   border-radius: 8px;
@@ -850,5 +851,124 @@ a.article:hover {
   .play-button-wrapper .circle-play-b svg {
     width: 50px;
     height: 50px;
+  }
+}
+/* /////////////////////////////////////////////////////
+   test 
+/////////////////////////////////////////////////////// */
+li {
+  display: inherit;
+}
+
+.test_text {
+  color: #36c;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+.quiz,
+.choices {
+  list-style-type: none;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 5px;
+  padding-left: 21px;
+  padding-bottom: 15px;
+}
+
+.choices li {
+  margin-bottom: 5px;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+}
+
+.choices label,
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.view-results {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: inherit;
+  color: white;
+  background: teal;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.my-results {
+  padding: 1rem;
+  border: 1px solid goldenrod;
+}
+.numbers_exam {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #36c;
+  background: #fff;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.num {
+  color: #36c !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  cursor: pointer !important;
+}
+.Answer {
+  color: #000;
+  font-family: Cairo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.342px;
+}
+.ex_active {
+  border-radius: 6px;
+  border: 1px solid #36c;
+  background: #36c;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.ex_active p {
+  color: #fff !important;
+}
+.quiz.Review {
+  height: 300px !important;
+  overflow-x: scroll !important;
+}
+.max_w {
+  cursor: pointer;
+}
+
+#div_content,
+#div_exam {
+  transition: ease all 0.5s;
+}
+
+.close_svg {
+  display: none !important;
+}
+
+.open_svg {
+  display: block !important;
+}
+
+#close_svg {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #open_svg {
+    display: none;
   }
 }
