@@ -18,6 +18,7 @@ if (playButton) {
   });
   videoPlayer.addEventListener("play", function () {
     playButton.style.display = "none";
+
     videoPlayer.style.filter = "none";
   });
 
